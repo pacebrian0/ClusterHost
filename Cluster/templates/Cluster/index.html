@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block jumbotron %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <h1> Pick your age range:</h1>
+        </div>
+
+        <form action="" method="post" class="row" name="age">{% csrf_token %}
+            <div class="row">
+                <div class="radio">
+                    <label><input type="radio" value=1 name="age" required>18-25</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="radio">
+                    <label><input type="radio" value=2 name="age" required>26-35</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="radio">
+                    <label><input type="radio" value=3 name="age" required>36-50</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="radio">
+                    <label><input type="radio" value=4 name="age" required>50+</label>
+                </div>
+            </div>
+
+            <input type="submit" class="btn btn-primary" name="buttn" required/>
+
+        </form>
+
+
+    </div>
+
+{% endblock %}
