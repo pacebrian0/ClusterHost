@@ -19,7 +19,7 @@ from django.contrib import admin
 from Cluster import views as cviews
 
 urlpatterns = [
-    url(r'^admin/$', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     url(r'^$', cviews.index),
     url(r'^clustering/$', cviews.clustering),
 
