@@ -5,7 +5,7 @@ from django.db import models
 
 
 class User(models.Model):
-    number = models.PositiveSmallIntegerField("User Identifier", default=1)
+    number = models.AutoField("User Identifier", primary_key=True)
     string = models.CharField("String", max_length=200, default="")
     agerange = models.PositiveSmallIntegerField("Age Range", default=0)
 
