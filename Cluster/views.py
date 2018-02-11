@@ -20,4 +20,4 @@ def index(request):
 
 
 def clustering(request):
-    return render(request, 'Cluster/clustering1.html')
+    return render(request, 'Cluster/no-k-means-page.html')

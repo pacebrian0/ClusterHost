@@ -1,7 +1,11 @@
 {% extends "clusteringbase.html" %}
+<script src="https://d3js.org/d3.v5.js"></script>
 {% block clustering %}
-    Clustering section
 
+    Clustering section
+    <script>
+        d3.voronoi();
+    </script>
 {% endblock %}
 {% block results %}
     Results section
