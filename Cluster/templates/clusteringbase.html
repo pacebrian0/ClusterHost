@@ -2,20 +2,19 @@
 {% block jumbotron %}
     <div class="modal-body row">
         <div class="col-md-6" id="cluster">
-            <p>
-                {% block clustering %}
+            <p id="clustering">
 
-                {% endblock %}
             </p>
         </div>
         <div class="col-md-6" id="results">
-            {% block results %}
+            <p id="results">
 
-            {% endblock %}
+            </p>
         </div>
     </div>
 
-
+    {% block js %}
+    {% endblock %}
 
 
 
